@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en" data-dpr="1" style="font-size: 54px;">
+<head>
+		<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>七彩徽章之旅</title>
+    <script src="http://yunqitong-1aced4-1251916211.tcloudbaseapp.com/static/game_run/hm.js"></script>
+    <script src="http://yunqitong-1aced4-1251916211.tcloudbaseapp.com/static/game_run/flexible.js"></script>
+    <style>@charset "utf-8";
+    html {
+        color: #000;
+        background: #fff;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%
+    }
+
+    html * {
+        outline: 0;
+        -webkit-text-size-adjust: none;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+    }
+
+    html, body {
+        font-family: sans-serif
+    }
+
+    body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+        margin: 0;
+        padding: 0
+    }
+
+    input, select, textarea {
+        font-size: 100%
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0
+    }
+
+    fieldset, img {
+        border: 0
+    }
+
+    abbr, acronym {
+        border: 0;
+        font-variant: normal
+    }
+
+    del {
+        text-decoration: line-through
+    }
+
+    address, caption, cite, code, dfn, em, th, var {
+        font-style: normal;
+        font-weight: 500
+    }
+
+    ol, ul {
+        list-style: none
+    }
+
+    caption, th {
+        text-align: left
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 100%;
+        font-weight: 500
+    }
+
+    q:before, q:after {
+        content: ''
+    }
+
+    sub, sup {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline
+    }
+
+    sup {
+        top: -.5em
+    }
+
+    sub {
+        bottom: -.25em
+    }
+
+    a:hover {
+        text-decoration: underline
+    }
+
+    ins, a {
+        text-decoration: none
+    }</style>
+    <link rel="stylesheet" href="http://yunqitong-1aced4-1251916211.tcloudbaseapp.com/static/game_run/animate.css">
+    <link rel="stylesheet" href="http://yunqitong-1aced4-1251916211.tcloudbaseapp.com/static/game_run/swiper.min.css">
+    <link rel="stylesheet" href="http://yunqitong-1aced4-1251916211.tcloudbaseapp.com/static/game_run/main.css">
+    <style>
+        .p3 .s2-btns {
+            bottom: 4rem;
+        }
+
+        .p3 .p3-words {
+            bottom: 0.15rem;
+        }
+
+        .p3 .s2-btn-box {
+            height: 1.2rem;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .p3 .s2-btn-one {
+            width: 3rem;
+
+        }
+
+        .p3 .p3-cover {
+            /* width: 9rem; */
+            /* left:0.5rem; */
+        }
+
+        .p3 .p3-qr {
+            box-sizing: border-box;
+            padding: 0.066666rem;
+        }
+
+        .p3 .p3-cover2 {
+            /* width: 9rem;
+            left:0.5rem; */
+            top: 50%;
+            margin-top: -7.4333rem;
+        }
+
+        .p3 .p3-cover2 {
+            /* height: 11.8rem;
+            top:7%; */
+        }
+    </style>
+</head>
+
+<body class="index-body" style="font-size: 12px;">
+<div class="loading" style="display:block;">
+    <img src="http://yunqitong-1aced4-1251916211.tcloudbaseapp.com/static/game_run/loading_bg.jpg" class="bg-img">
+    <div class="loading-gif pos-a">
+        <img src="http://yunqitong-1aced4-1251916211.tcloudbaseapp.com/static/game_run/loading_person.gif" class="img-bg">
+    </div>
+    <div class="bar">
+        <span class="line" style="width: 100%;"></span>
+        <div class="loading-progress pos-a">0%</div>
+    </div>
+</div>
+<div class="music on" id="music" style="top:1.5rem;z-index: 100;">
+    <img src="http://yunqitong-1aced4-1251916211.tcloudbaseapp.com/static/game_run/play.png" alt="" class="play">
+    <img src="http://yunqitong-1aced4-1251916211.tcloudbaseapp.com/static/game_run/pause.png" alt="" class="pause">
+</div>
+<div class="wrap">
+    <div class="swiper-container h100 swiper-container-vertical" id="swiper1">
+        <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+            <div class="swiper-slide p1 swiper-slide-active">
+                <img src="http://yunqitong-1aced4-1251916211.tcloudbaseapp.com/static/game_run/p1_bg.jpg" class="bg-img">
+                <div class="p1-person pos-a animated fadeInLeft2"><img
+                        src="http://yunqitong-1aced4-1251916211.tcloudbaseapp.com/static/game_run/p1_person.png" class="img-bg" draggable="true"></div>
+                <div class="p1-desc pos-a fadeIn animated">
+                    <img src="http://yunqitong-1aced4-1251916211.tcloudbaseapp.com/static/game_run/p1_desc.png" class="img-bg shake animated infinite"
+                         style="display: inline;">
+                </div>
+                <div class="p1-title pos-a bounceInDown animated delay-1s"><img
+                        src="http://yunqitong-1aced4-1251916211.tcloudbaseapp.com/static/game_run/p1_title.png" class="img-bg"></div>
+                <div class="p1-btn pos-a animated fadeInUp delay-2s">
+                    <img src="http://yunqitong-1aced4-1251916211.tcloudbaseapp.com/static/game_run/p1_btn.png" class="img-bg bounce infinite animated delay-2s"
+                         style="display: inline;">
+                </div>
+            </div>
+            <div class="swiper-slide p2">
+                <div class="h100" id="game" style="overflow: hidden;">
+                    <div class="game-progress pos-a">
+                        <img src="http://yunqitong-1aced4-1251916211.tcloudbaseapp.com/static/game_run/p2_progress.png" class="img-bg">
+                        <ul class="pos-a">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="game-time pos-a">
+                        <img src="http://yunqitong-1aced4-1251916211.tcloudbaseapp.com/static/game_run/p2_time.png" class="img-bg">
+                        <span class="pos-a" style="margin-top: -0.1rem;">30s</span>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide p3">
+                <div class="s1-inner" id="cover2">
+                    <img src="http://yunqitong-1aced4-1251916211.tcloudbaseapp.com/static/game_run/p_r_bg1.jpg" class="bg-img">
+                    <div class="p3-cover pos-a">
+                        <img src="http://yunqitong-1aced4-1251916211.tcloudbaseapp.com/static/game_run/p3_bg2.png" class="img-bg">
+                        <div class="p3-qr pos-a">
+                            <img src="http://yunqitong-1aced4-1251916211.tcloudbaseapp.com/static/game_run/qr_n.png" class="img-bg">
+                        </div>
+                    </div>
+                </div>
+                <div class="s2-btns pos-a">
+                    <div class="s2-btn-box">
+                        <div class="s2-btn-one fl btn-back">
+                            <img src="http://yunqitong-1aced4-1251916211.tcloudbaseapp.com/static/game_run/btn_back2.png" class="img-bg">
+                        </div>
+                        <div class="s2-btn-one fr btn-share">
+                            <img src="http://yunqitong-1aced4-1251916211.tcloudbaseapp.com/static/game_run/btn_share.png" class="img-bg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+    </div>
+</div>
+<div class="m-cd pos-a">
+    <span class="pos-a">3</span>
+</div>
+
+<div class="mask m-rule">
+    <div class="m-box">
+        <img src="http://yunqitong-1aced4-1251916211.tcloudbaseapp.com/static/game_run/mask_rule.png" class="img-bg">
+        <div class="m-rule-close pos-a">
+            <img src="http://yunqitong-1aced4-1251916211.tcloudbaseapp.com/static/game_run/btn_close.png" class="img-bg">
+        </div>
+    </div>
+</div>
+<div class="mask m-success">
+    <div class="swiper-container" id="swiper3" style="height: 100%">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="height: 70rem">
+                <div>
+                    <div class="s-up pos-a">
+                        <div class="img-1 fadeInUp animated infinite"><img
+                        src="http://yunqitong-1aced4-1251916211.tcloudbaseapp.com/static/game_run/p3_up.png" class="img-bg"></div>
+                    </div>
+                <img src="http://yunqitong-1aced4-1251916211.tcloudbaseapp.com/static/game_run/m_success.png" class="img-bg">
+                <div class="m-success-close ">
+                    <img src="http://yunqitong-1aced4-1251916211.tcloudbaseapp.com/static/game_run/btn_get.png" class="img-bg">
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mask m-fail">
+    <div class="m-box ">
+        <img src="http://yunqitong-1aced4-1251916211.tcloudbaseapp.com/static/game_run/m_fail.png" class="img-bg">
+        <p class="m-fail-num pos-a">
+            1
+        </p>
+        <div class="m-fail-btn pos-a">
+            <img src="http://yunqitong-1aced4-1251916211.tcloudbaseapp.com/static/game_run/btn_back.png" class="img-bg">
+        </div>
+    </div>
+</div>
+<div class="m-toast fadeIn"></div>
+<div class="mask m-share" style="z-index: 999;">
+    <img src="http://yunqitong-1aced4-1251916211.tcloudbaseapp.com/static/game_run/arr.png" class="fr" style="margin:0.4rem;width: 1.8933rem;left:2.3333rem;"
+         alt="">
+</div>
+<audio src="http://yunqitong-1aced4-1251916211.tcloudbaseapp.com/static/game_run/game.mp3" id="game-music" loop=""></audio>
+<script src="http://yunqitong-1aced4-1251916211.tcloudbaseapp.com/static/game_run/jQuery.min.js"></script>
+<script src="http://yunqitong-1aced4-1251916211.tcloudbaseapp.com/static/game_run/swiper.min.js"></script>
+<script src="http://yunqitong-1aced4-1251916211.tcloudbaseapp.com/static/game_run/touch-0.2.14.min.js"></script>
+<script src="http://yunqitong-1aced4-1251916211.tcloudbaseapp.com/static/game_run/html2canvas.min.js"></script>
+<script src="http://yunqitong-1aced4-1251916211.tcloudbaseapp.com/static/game_run/jweixin-1.6.0.js"></script>
+<script src="http://yunqitong-1aced4-1251916211.tcloudbaseapp.com/static/game_run/phaser.3.15.1.min.js"></script>
+<script src="http://yunqitong-1aced4-1251916211.tcloudbaseapp.com/static/game_run/game.js"></script>
+<script>    
+    $('.m-success').show();
+    setTimeout(function () {
+        $('.m-success').css("opacity","1");
+        $('.m-success').hide();
+    }, 3000);
+    $(function () {
+        
+        
+        
+        
+        var bookTitle = '集七彩徽章 赢五一大奖';
+        var msgContent = '一路向北· 泾彩乐游 这个五一泾河新城让你嗨个够'; // 微信分享描述
+        
+        $.ajax({
+                type: "post",
+                url: "https://hgame.lottery.gov.cn/wechat_share_api/index.php",
+                dataType: 'json',
+                data: {
+                    url: ""http://h5.ithinky.com/honor0825/index.html""
+                },
+                success: function(data) {
+                    window.token = data.token;
+                    wx.config({
+                        debug: false,
+                        appId: data.appid,
+                        timestamp: data.timestamp,
+                        nonceStr: data.noncestr,
+                        signature: data.signature,
+                        jsApiList: [
+                            'onMenuShareTimeline',
+                            'onMenuShareAppMessage'
+                        ]
+                    })
+                    wx.ready(function() {
+		                    var shareData = {
+		                        title: bookTitle, // 分享标题
+		                        desc: msgContent,
+		                        link: window.location.href, // 分享链接
+		                        imgUrl: "https://yunqitong-1aced4-1251916211.tcloudbaseapp.com/static/game_run/pic_share.jpg", // 分享图标
+		                    };
+		                    wx.onMenuShareAppMessage(shareData);
+		                    wx.onMenuShareTimeline(shareData);
+		                    wx.onMenuShareQQ(shareData);
+		                    wx.onMenuShareWeibo(shareData);
+		                });
+                    wx.error(function(res) {
+                        // alert(res)
+                    })
+                },
+                error: function(xhr, ajaxOptions, thrownError) {
+                    // alert("Http status: " + xhr.status + " " + xhr.statusText + "\najaxOptions: " + ajaxOptions + "\nthrownError:" + thrownError + "\n" + xhr.responseText);
+                }
+            })
+        
+        
+        
+        var w_w = $(window).width();
+        var w_h = $(window).height();
+        var progress = 0;
+        var loading_interval = setInterval(() => {
+            progress++;
+            // if(progress>=95){
+            // 	$('.loading-img').css('left','95%');
+            // }else{
+            // 	$('.loading-img').css('left',progress+'%');
+            // }
+            if (progress >= 100) {
+                clearInterval(loading_interval);
+                $('.line').width('100%');
+                $('.loading-progress').text('100%');
+                $('.loading').hide();
+                $('.p1 .animated,.p-1').show();
+            } else {
+                $('.line').width(progress + '%');
+                $('.loading-progress').text(parseInt(progress) + '%');
+            }
+        }, 50);
+
+        //$('.m-fail').show();
+        var time_interva = null;
+
+
+        $('.btn-back,.m-fail-btn').on('click', function () {
+            window.location = window.location;
+        });
+        $('.btn-share').on('click', function () {
+            $('.m-share').show();
+        });
+        $('.m-share').on('click', function () {
+            $('.m-share').hide();
+        });
+
+        $('.p1-btn').on('click', function () {
+            mySwiper.allowSlideNext = true;
+            mySwiper.slideNext();
+            mySwiper.allowSlideNext = false;
+            //create_img('cover1');
+
+            setTimeout(function () {
+                create_img('cover2');
+            }, 1000)
+
+            setTimeout(function () {
+                $('.m-rule').show();
+            }, 300)
+        });
+        $('.m-rule-close').on('click', function () {
+            $(this).parents('.mask').hide();
+            $('.m-cd').show();
+            count_time_down();
+        });
+        $('.m-success-close').on('click', function () {
+            mySwiper.allowSlideNext = true;
+            mySwiper.slideNext();
+            mySwiper.allowSlideNext = false;
+            $(this).parents('.mask').hide();
+        });
+
+        $('.m-info-btn').on('click', function () {
+            _t.scene.resume();
+            $('.m-info').hide();
+        });
+
+
+        var ctd_interval = null;
+        var ctd_time = 3;
+
+        function count_time_down() {
+            ctd_interval = setInterval(function () {
+                if (--ctd_time < 0) {
+                    clearInterval(ctd_interval);
+                    $('.m-cd').hide();
+                    _t.scene.resume();
+                } else {
+                    $('.m-cd span').text(ctd_time);
+                }
+            }, 1000);
+        }
+
+        function show_toast(text) {
+            $('.m-toast').show().text(text);
+            clearTimeout(time_interva);
+            time_interva = setTimeout(function () {
+                $('.m-toast').hide();
+            }, 1000 * 3)
+        }
+
+
+        $('.music').on("click", function () {
+            var audio = $('#game-music')[0];
+            $(this).toggleClass('on');
+            if ($(this).hasClass('on')) {
+                // 暂停中
+                audio.play();
+            } else {
+                // 播放中
+                audio.pause();
+            }
+        });
+        $('.replace-link').on('click', function () {
+            var link = $(this).attr('data-link');
+            window.location.replace(link);
+        });
+        var mySwiper = new Swiper('#swiper1', {
+            initialSlide: 0,
+            direction: 'vertical',
+            allowSlideNext: false,
+            allowSlidePrev: false,
+            // effect: 'fade',
+            on: {
+                slideChangeTransitionEnd: function () {
+                    var _this = this;
+                    // alert(this.activeIndex);//切换结束时，告诉我现在是第几个slide
+                    $('.wrap .animated').show();
+                    this.allowSlideNext = false;
+                    if (this.activeIndex == 6) {
+                    }
+                },
+            },
+        });
+        var mySwiper2 = new Swiper('#swiper2', {
+            initialSlide: 0,
+            // direction: 'vertical',
+            // effect: 'fade',
+            on: {
+                slideChangeTransitionEnd: function () {
+                    var _this = this;
+                    if (this.activeIndex == 6) {
+                    }
+                },
+            },
+        });
+
+        var mySwiper3 = new Swiper('#swiper3', {
+            direction: 'vertical',
+            roundLengths: true,
+            slidesPerView: 'auto',
+            freeMode: true,
+            mousewheel: true,
+        });
+
+        function create_img(id) {
+            new html2canvas(document.getElementById(id), {
+                allowTaint: true,
+                useCORS: true
+            }).then(canvas => {
+                var data = canvas.toDataURL();
+                var img = new Image();
+                img.src = data;
+                img.onload = function() {
+                    var img = $('<img src="'+data+'" class="cover-img">');
+                    $('#'+id).append(img);
+                };
+            });
+        }
+
+        // create_img('cover2');
+
+        //ios 音乐自动播放
+        function audioAutoPlay(id) {
+            var audio = document.getElementById(id);
+            audio.play();
+            document.addEventListener("WeixinJSBridgeReady", function () {
+                audio.play();
+            }, false);
+            document.addEventListener('YixinJSBridgeReady', function () {
+                audio.play();
+            }, false);
+        }
+
+        audioAutoPlay('game-music');
+
+    });
+</script>
+</body>
+</html>
