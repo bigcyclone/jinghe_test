@@ -289,49 +289,33 @@
         
         var bookTitle = '集七彩徽章 赢五一大奖';
         var msgContent = '一路向北· 泾彩乐游 这个五一泾河新城让你嗨个够'; // 微信分享描述
-        
         $.ajax({
-                type: "post",
-                url: "https://hgame.lottery.gov.cn/wechat_share_api/index.php",
-                dataType: 'json',
-                data: {
-                    url: "http://h5.ithinky.com/honor0825/index.html"
-                },
-                success: function(data) {
-                    window.token = data.token;
-                    wx.config({
-                        debug: false,
-                        appId: data.appid,
-                        timestamp: data.timestamp,
-                        nonceStr: data.noncestr,
-                        signature: data.signature,
-                        jsApiList: [
-                            'onMenuShareTimeline',
-                            'onMenuShareAppMessage'
-                        ]
-                    })
-                    wx.ready(function() {
-		                    var shareData = {
-		                        title: bookTitle, // 分享标题
-		                        desc: msgContent,
-		                        link: window.location.href, // 分享链接
-		                        imgUrl: "https://yunqitong-1aced4-1251916211.tcloudbaseapp.com/static/game_run/pic_share.jpg", // 分享图标
-		                    };
-		                    wx.onMenuShareAppMessage(shareData);
-		                    wx.onMenuShareTimeline(shareData);
-		                    wx.onMenuShareQQ(shareData);
-		                    wx.onMenuShareWeibo(shareData);
-		                });
-                    wx.error(function(res) {
-                        // alert(res)
-                    })
-                },
-                error: function(xhr, ajaxOptions, thrownError) {
-                    // alert("Http status: " + xhr.status + " " + xhr.statusText + "\najaxOptions: " + ajaxOptions + "\nthrownError:" + thrownError + "\n" + xhr.responseText);
-                }
-            })
-        
-        
+            url: 'https://hgame.lottery.gov.cn/wechat_share_api/index.php',
+            type: 'post',
+            data: {
+                'url': "https://hgame.lottery.gov.cn/qcbszl0901/index.html"
+            },
+            dataType: 'json',
+            success: function(data) {
+                var jssdk = JSON.parse(data.data.jssdk);
+                // jssdk.debug = true;
+                wx.config(jssdk);
+
+                wx.ready(function() {
+                    var shareData = {
+                        title: bookTitle, // 分享标题
+                        desc: msgContent,
+                        link: window.location.href, // 分享链接
+                        imgUrl: "https://yunqitong-1aced4-1251916211.tcloudbaseapp.com/static/game_run/pic_share.jpg", // 分享图标
+                    };
+                    wx.onMenuShareAppMessage(shareData);
+                    wx.onMenuShareTimeline(shareData);
+                    wx.onMenuShareQQ(shareData);
+                    wx.onMenuShareWeibo(shareData);
+                });
+            }
+        });
+                
         
         var w_w = $(window).width();
         var w_h = $(window).height();
